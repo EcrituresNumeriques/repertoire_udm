@@ -1,0 +1,4 @@
+{{ object.titre }}
+{% if object.auteur %}
+    {{ object.auteur }}
+{% endif %}

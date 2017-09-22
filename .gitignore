@@ -1,4 +1,12 @@
-/settings.py
+*.sqlite
+whoosh_index
+*_credentials.py
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

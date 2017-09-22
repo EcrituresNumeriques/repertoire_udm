@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>Zotero</h2>
+{% for item in oeuvres %}
+<pre style="white-space: pre-wrap;">{{ item }}</pre>
+<pre>
+    {{ item.data.key }}
+    {{ item.data.title }}
+    {{ item.data.url }}
+    {% for creator in item.data.creators %}
+    {{ creator.firstName }} {{ creator.lastName }}
+    {% endfor %}
+</pre>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>{{ oeuvre.titre }}</h2>
+<ul>
+    <li>{{ oeuvre.url }}</li>
+    <li>{{ oeuvre.auteur }}</li>
+    <li>{{ oeuvre.id_zotero }}</li>
+</ul>
+{% endblock %}

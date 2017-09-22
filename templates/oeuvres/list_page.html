@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>Liste</h2>
+<ul>
+    {% for item in oeuvres %}
+    <li><a href="{% url 'repertoire:display_oeuvre' item.pk %}">{{ item.titre }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
